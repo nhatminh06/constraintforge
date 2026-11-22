@@ -1,0 +1,92 @@
+{
+  "schema": "constraintforge-m8-phase2a-candidate-panel-v1",
+  "synthetic": false,
+  "session_id": "m8-phase2a-session-002",
+  "session_index": 1,
+  "protocol_sha256": "d8e80f9a37359dadb86aa798ba5e798f22237e4a7cf0a3ee625eba239005939e",
+  "source_revision": "7b6a74f27d8acd87e7ed3dc10a94629d69b73c3c",
+  "source_tree_sha256": "89d0025d258c8932fd2ea3c8c9e8ee5a44f11d25a4794309e4b08c9a4a2c5e3e",
+  "panel_id": "A",
+  "chronological_panel_order": 1,
+  "workload": [
+    256,
+    64,
+    384
+  ],
+  "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+  "adapter": {
+    "name": "Apple M5",
+    "backend": "Metal",
+    "device_type": "IntegratedGpu",
+    "max_buffer_size": 4294967295,
+    "max_storage_buffer_binding_size": 4294967292,
+    "max_compute_workgroups_per_dimension": 65535,
+    "timestamp_query_supported": true,
+    "timestamp_period_ns": 1.0
+  },
+  "correctness_admission_blocks": [
+    0,
+    1,
+    2
+  ],
+  "blocks": [
+    {
+      "block_index": 0,
+      "order_index": 2,
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "started_utc": 1794679227,
+      "ended_utc": 1794679227,
+      "raw_samples_ns": [
+        524250.0,
+        517584.0,
+        517875.0,
+        518667.0,
+        522875.0,
+        519000.0,
+        517708.0,
+        518459.0,
+        518209.0,
+        517917.0
+      ]
+    },
+    {
+      "block_index": 1,
+      "order_index": 7,
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "started_utc": 1794679227,
+      "ended_utc": 1794679227,
+      "raw_samples_ns": [
+        518833.0,
+        518125.0,
+        518292.0,
+        518250.0,
+        518750.0,
+        527875.0,
+        527875.0,
+        529917.0,
+        517583.0,
+        520625.0
+      ]
+    },
+    {
+      "block_index": 2,
+      "order_index": 2,
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "started_utc": 1794679227,
+      "ended_utc": 1794679227,
+      "raw_samples_ns": [
+        518208.0,
+        518292.0,
+        518833.0,
+        517917.0,
+        517709.0,
+        517916.0,
+        517791.0,
+        526000.0,
+        1476125.0,
+        532417.0
+      ]
+    }
+  ],
+  "status": "complete"
+}

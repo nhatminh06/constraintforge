@@ -1,0 +1,18 @@
+[package]
+name = "constraintforge-gpu"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+bytemuck.workspace = true
+constraintforge-ir = { path = "../constraintforge-ir" }
+pollster.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+wgpu.workspace = true
+
+[dev-dependencies]
+constraintforge-reference = { path = "../constraintforge-reference" }
+

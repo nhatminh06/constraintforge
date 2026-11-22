@@ -1,0 +1,12 @@
+schema,session_id,session_index,m,k,n,best_a,best_b,exact_agreement,jaccard
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-001,0,7,19,11,tiled-bm8-bn8-bk8-wg8x8x1-shader1,tiled-bm8-bn8-bk8-wg8x8x1-shader1,true,1
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-001,0,256,64,384,tiled-bm16-bn16-bk32-wg16x16x1-shader1,tiled-bm16-bn16-bk32-wg16x16x1-shader1,true,1
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-002,1,7,19,11,tiled-bm8-bn8-bk8-wg8x8x1-shader1,tiled-bm8-bn8-bk8-wg8x8x1-shader1,true,1
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-002,1,256,64,384,tiled-bm16-bn16-bk32-wg16x16x1-shader1,tiled-bm16-bn16-bk32-wg16x16x1-shader1,true,1
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-003,2,7,19,11,tiled-bm8-bn16-bk8-wg16x8x1-shader1,tiled-bm16-bn16-bk8-wg16x16x1-shader1,false,0
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-003,2,256,64,384,tiled-bm16-bn16-bk32-wg16x16x1-shader1,tiled-bm16-bn16-bk32-wg16x16x1-shader1,true,1
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-004,3,7,19,11,tiled-bm8-bn16-bk8-wg16x8x1-shader1,tiled-bm8-bn8-bk8-wg8x8x1-shader1,false,0
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-004,3,256,64,384,tiled-bm16-bn16-bk32-wg16x16x1-shader1,tiled-bm16-bn16-bk32-wg16x16x1-shader1,true,1
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-005,4,7,19,11,tiled-bm16-bn16-bk8-wg16x16x1-shader1,tiled-bm8-bn16-bk8-wg16x8x1-shader1,false,0
+constraintforge-m8-phase2a-best-set-v1,m8-phase2a-session-005,4,256,64,384,tiled-bm16-bn16-bk32-wg16x16x1-shader1,tiled-bm16-bn16-bk32-wg16x16x1-shader1,true,1
+

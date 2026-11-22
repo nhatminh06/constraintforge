@@ -1,0 +1,89 @@
+schema = "constraintforge-m8-phase2a-protocol-v1"
+id = "m8-phase2a-prospective-reference-panels-v1"
+version = "1.0.0"
+implementation_version = "m8-phase2a-v1"
+phase = "frozen"
+frozen = true
+classification = "PROSPECTIVE / DESCRIPTIVE PILOT"
+research_question = "How reproducible are empirical-best kernel identities and complete candidate rankings between two independently scheduled reference panels within a separately scheduled physical GPU session?"
+independent_unit = "one separately scheduled physical GPU session; panels, workloads, candidates, blocks, and timestamps are paired or nested"
+hardware_target = "Apple M5 Metal with GPU timestamp queries"
+measurement = "GPU compute-pass timestamps converted with the positive finite queue timestamp period; no host time substitutes"
+candidate_space = "the frozen ten legal M5 tiled MatMul candidates used by M7"
+panel_definition = "A and B measure the same ten candidates with distinct records, warmups, result buffers, durable attempts, block orders, and candidate permutations"
+panel_ordering = "A-first for sessions 1, 3, and 5; B-first for sessions 2 and 4; labels are identities, not chronological positions"
+candidate_ordering = "SHA-256-keyed deterministic permutation from session seed, workload, panel identity, and block identity; generated before measurement and never adapted"
+block_ordering = "SHA-256-keyed deterministic permutation independently generated for each session/workload/panel stream"
+correctness_policy = "the existing isolated reference-batch API performs one correctness admission during preparation of every candidate block; 120 admissions per session are counted honestly"
+reference_aggregation = "median of all 30 finite positive timestamp samples for a candidate within one panel; never median of block medians"
+tie_rule = "exactly equal finite medians share empirical-best membership and average rank; lexicographically first tied identity is the prespecified operational representative while cross-panel regret also reports the tied-set range"
+primary_metrics = [
+    "empirical-best set exact agreement",
+    "best-set Jaccard",
+    "Spearman rank correlation",
+    "Kendall tau-b",
+    "top-3 Jaccard",
+]
+secondary_metrics = [
+    "candidate latency ratio A/B",
+    "candidate relative-latency difference",
+    "best-to-runner-up separation",
+    "within-panel block variability",
+    "between-panel variability",
+    "ranking changes",
+    "extreme retained timestamps",
+    "directional cross-panel regret range",
+]
+invalid_rule = "reject non-finite or non-positive timestamp period or samples, correctness failure, identity mismatch, duplicate data, or unsupported hardware; never impute, replace, trim, or adapt"
+missing_rule = "any missing workload, panel, candidate, block, sample, attempt, or provenance field makes the session incomplete"
+interruption_rule = "persist invocation intent before GPU work; reconcile a durably committed block; refuse remeasurement when invocation may have occurred without a durable block"
+stop_rules = "stop on source/protocol/hardware/timestamp/correctness/persistence mismatch, ambiguous attempt, duplicate, wall cap, or owner boundary; preserve all durable evidence"
+workloads = [
+    [
+    7,
+    19,
+    11,
+],
+    [
+    256,
+    64,
+    384,
+],
+]
+panel_ids = [
+    "A",
+    "B",
+]
+candidates = [
+    "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+    "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+    "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+    "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+    "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+    "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+    "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+    "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+    "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+    "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+]
+sessions = 5
+seeds = [
+    211,
+    223,
+    227,
+    229,
+    233,
+]
+blocks_per_candidate = 3
+warmups_per_block = 3
+samples_per_block = 10
+correctness_admissions_per_block = 1
+session_wall_cap_ms = 2700000
+expected_panel_records = 20
+expected_candidate_records = 200
+expected_blocks = 600
+expected_timed_samples = 6000
+expected_warmups = 1800
+expected_correctness_admissions = 600
+expected_total_candidate_invocations = 8400
+

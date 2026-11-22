@@ -1,0 +1,2053 @@
+{
+  "schema": "constraintforge-m8-phase2a-session-v1",
+  "synthetic": false,
+  "session_id": "m8-phase2a-session-003",
+  "session_index": 2,
+  "protocol_sha256": "d8e80f9a37359dadb86aa798ba5e798f22237e4a7cf0a3ee625eba239005939e",
+  "software": {
+    "rust_version": "rustc 1.87.0 (17067e9ac 2025-05-09)",
+    "cargo_version": "cargo 1.87.0 (99624be96 2025-05-06)",
+    "wgpu_version": "30.0.1",
+    "operating_system": "macos",
+    "architecture": "aarch64",
+    "build_profile": "release",
+    "source_revision": "7b6a74f27d8acd87e7ed3dc10a94629d69b73c3c",
+    "git_worktree_clean": true,
+    "source_fingerprint_fnv1a64": "bdef8fd021140412",
+    "fingerprint_paths": [
+      "Cargo.lock",
+      "Cargo.toml",
+      "crates/constraintforge-bench/Cargo.toml",
+      "crates/constraintforge-bench/src/lib.rs",
+      "crates/constraintforge-cli/Cargo.toml",
+      "crates/constraintforge-cli/src/main.rs",
+      "crates/constraintforge-gpu/Cargo.toml",
+      "crates/constraintforge-gpu/src/lib.rs",
+      "crates/constraintforge-ir/Cargo.toml",
+      "crates/constraintforge-ir/src/lib.rs",
+      "crates/constraintforge-reference/Cargo.toml",
+      "crates/constraintforge-reference/src/lib.rs",
+      "crates/constraintforge-research/Cargo.toml",
+      "crates/constraintforge-research/src/lib.rs",
+      "crates/constraintforge-research/src/prospective.rs",
+      "crates/constraintforge-research/src/reference_panels.rs",
+      "crates/constraintforge-research/src/reference_robustness.rs",
+      "crates/constraintforge-research/src/robustness.rs",
+      "crates/constraintforge-tuner/Cargo.toml",
+      "crates/constraintforge-tuner/src/lib.rs",
+      "rust-toolchain.toml"
+    ],
+    "source_tree_sha256": "89d0025d258c8932fd2ea3c8c9e8ee5a44f11d25a4794309e4b08c9a4a2c5e3e",
+    "source_manifest_sha256": [
+      {
+        "path": "Cargo.lock",
+        "sha256": "2155ddae7f843c894b42141d52c5b140e2193f8bf69c2c297758077d4e678a13"
+      },
+      {
+        "path": "Cargo.toml",
+        "sha256": "bc0d31ffc1107865321c702b342ec3b729e17e202fa8233b205ff79a6b85ec21"
+      },
+      {
+        "path": "crates/constraintforge-bench/Cargo.toml",
+        "sha256": "132df5612a8ac045356386552334e546ae5b88dfe1446efb60a309c039bfddf5"
+      },
+      {
+        "path": "crates/constraintforge-bench/src/lib.rs",
+        "sha256": "5126088146720dfc98cb7f27953b653f1ac72119ae68d456e7276b9524f700ba"
+      },
+      {
+        "path": "crates/constraintforge-cli/Cargo.toml",
+        "sha256": "5b9af069de85285346af844261952f7a6f600e553b647f0f5d4892a482a2e50a"
+      },
+      {
+        "path": "crates/constraintforge-cli/src/main.rs",
+        "sha256": "f64300bf62d3c6f545660538bb6009c78c467f7aa39241f326186cae614f1c78"
+      },
+      {
+        "path": "crates/constraintforge-gpu/Cargo.toml",
+        "sha256": "626ecb7fe0207f60a8f089d0eb619bd34476ef367e1443764bb7ae5f5d517b2e"
+      },
+      {
+        "path": "crates/constraintforge-gpu/src/lib.rs",
+        "sha256": "274d2addf998dea43218e54559a138c93a6ee73e0eea8a9b09e961ffcdb03353"
+      },
+      {
+        "path": "crates/constraintforge-ir/Cargo.toml",
+        "sha256": "974c642ff02659987cea3c2126c39c297e52bcf81d894e564f28f70a629fab00"
+      },
+      {
+        "path": "crates/constraintforge-ir/src/lib.rs",
+        "sha256": "87d291b6dbd104433e741ff1a928acbce6e33eae7130cfd466f85ef39f17abd6"
+      },
+      {
+        "path": "crates/constraintforge-reference/Cargo.toml",
+        "sha256": "64f997d014132d6c3e76e467e8c61baf2d978d890b5853e07c6287490a9dba53"
+      },
+      {
+        "path": "crates/constraintforge-reference/src/lib.rs",
+        "sha256": "63b810259b76786b6a3b9eb35fc88456aaa3902b1d8a2da253a500929091833a"
+      },
+      {
+        "path": "crates/constraintforge-research/Cargo.toml",
+        "sha256": "fdcab331b31c97eb05aa1426cf9500fa1c3b92db62ca31fe38170d10fb74951e"
+      },
+      {
+        "path": "crates/constraintforge-research/src/lib.rs",
+        "sha256": "930c9f27ebb7ea7c5bba05ab902eaa80c26534a2abd784aa6dea572b814fca43"
+      },
+      {
+        "path": "crates/constraintforge-research/src/prospective.rs",
+        "sha256": "42aa4c210ccd99c932192ba6671be217f6be762912fd1a5b3237c392d665d5ed"
+      },
+      {
+        "path": "crates/constraintforge-research/src/reference_panels.rs",
+        "sha256": "8e64de25564ff47466870b45e6436a7fbd143d23ad0bed2fba6a1c8519f7d320"
+      },
+      {
+        "path": "crates/constraintforge-research/src/reference_robustness.rs",
+        "sha256": "fbca496ac4cf0eb13610ead47d17ea8c9535974a3a5be75d911fbbfcaf393fdf"
+      },
+      {
+        "path": "crates/constraintforge-research/src/robustness.rs",
+        "sha256": "edc67157c4e88c7615c510ca5f02809a09e7ce9d288022f66a414f41d142cbd5"
+      },
+      {
+        "path": "crates/constraintforge-tuner/Cargo.toml",
+        "sha256": "5b31a0bd005aa6dd39109451891499a5682a1fb4ea8a722cb9342598c05c31ec"
+      },
+      {
+        "path": "crates/constraintforge-tuner/src/lib.rs",
+        "sha256": "81db2278c77d20b2438e3ee2140cc23e8bfdc9f6f132072cfa45160a851b6234"
+      },
+      {
+        "path": "research/protocols/m6-pilot.toml",
+        "sha256": "23b2a54d58f8ff3299329bce3b65c120e73fb03b0928743e844791011fd046e3"
+      },
+      {
+        "path": "research/protocols/m6-v1.toml",
+        "sha256": "5a20250575ee8a0969317a3a32f2addb2120732ac5167ed50edd8303e8ea17e1"
+      },
+      {
+        "path": "research/protocols/m6-v2-pilot.toml",
+        "sha256": "71724d8efd82e6d75cd1c31f1e8c762c54d65f46df4db7bea22d8b8a33671381"
+      },
+      {
+        "path": "research/protocols/m6-v2.toml",
+        "sha256": "81296ac7da1448b98ea75e70a6e4404021775d5bbb31ed2011c084104ce3dd22"
+      },
+      {
+        "path": "research/protocols/m7-phase2a.toml",
+        "sha256": "19aae7b90745c01405134201f100a58700b7b698b9661391bcec00724d09923c"
+      },
+      {
+        "path": "research/protocols/m8-phase2a-v1.toml",
+        "sha256": "7e17031786dc6f3743cb425b52cbe266507662d9bae0a316c161580098f3a723"
+      },
+      {
+        "path": "research/protocols/m8-reference-reliability-v1.toml",
+        "sha256": "80263cf498eff40a2d9d4089062edc512c8473a34fe77e75d7cd5ac23ae2e0d5"
+      },
+      {
+        "path": "rust-toolchain.toml",
+        "sha256": "a0746d273e75bc5f39c640b540058ddb6b0fe6c0627dd3babf91ba3d3224f711"
+      }
+    ],
+    "cargo_lock_sha256": "2155ddae7f843c894b42141d52c5b140e2193f8bf69c2c297758077d4e678a13",
+    "rust_toolchain_sha256": "a0746d273e75bc5f39c640b540058ddb6b0fe6c0627dd3babf91ba3d3224f711",
+    "research_implementation_version": "m8-phase2a-v1"
+  },
+  "plan": {
+    "schema": "constraintforge-m8-phase2a-plan-v1",
+    "session_index": 2,
+    "session_seed": 227,
+    "panels": [
+      {
+        "workload": [
+          7,
+          19,
+          11
+        ],
+        "workload_order": 0,
+        "panel_id": "A",
+        "chronological_panel_order": 0,
+        "stream_seed_sha256": "7bc37750ac2129594fda7bb16780c97d679c040e0027124fd320b1931b84de3f",
+        "blocks": [
+          {
+            "block_index": 1,
+            "execution_order": 0,
+            "permutation_sha256": "2e3db10872b2af5b089cc928442b2872517a13b98afe68672f5673241e3f32f7",
+            "candidate_ids": [
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1"
+            ]
+          },
+          {
+            "block_index": 2,
+            "execution_order": 1,
+            "permutation_sha256": "3d57962e15370ad0087296f469d8dcbc97e874df2f965dd2858bab03df4624cc",
+            "candidate_ids": [
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1"
+            ]
+          },
+          {
+            "block_index": 0,
+            "execution_order": 2,
+            "permutation_sha256": "6f180468df9fea41a468987c2580f0f56dea2c8f60aa89c2499b3e0dedd338fe",
+            "candidate_ids": [
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1"
+            ]
+          }
+        ]
+      },
+      {
+        "workload": [
+          7,
+          19,
+          11
+        ],
+        "workload_order": 0,
+        "panel_id": "B",
+        "chronological_panel_order": 1,
+        "stream_seed_sha256": "9862bf2b52254ef5a295113784ba554141f556cdd50dccf3d63676deb33af1ce",
+        "blocks": [
+          {
+            "block_index": 0,
+            "execution_order": 0,
+            "permutation_sha256": "47f6ffff2a542658a0fd788044c4a3c07e8f86d7c83f8a67d46bd4299958b3cf",
+            "candidate_ids": [
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1"
+            ]
+          },
+          {
+            "block_index": 2,
+            "execution_order": 1,
+            "permutation_sha256": "4cf1e8387cf3a6acfcbe3c9df549e9939722fe0a96c0ca0ea7e876c70a1a1d70",
+            "candidate_ids": [
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1"
+            ]
+          },
+          {
+            "block_index": 1,
+            "execution_order": 2,
+            "permutation_sha256": "c32c172c88a7aa1a37e7be767e1a42cfedc8bc7cb25e8d260322f19096f47cd2",
+            "candidate_ids": [
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1"
+            ]
+          }
+        ]
+      },
+      {
+        "workload": [
+          256,
+          64,
+          384
+        ],
+        "workload_order": 1,
+        "panel_id": "A",
+        "chronological_panel_order": 2,
+        "stream_seed_sha256": "fdbe549be8e8a3e3f68e9c6a3817886954dab8cb319c036e02023dbdba9ffe9e",
+        "blocks": [
+          {
+            "block_index": 2,
+            "execution_order": 0,
+            "permutation_sha256": "15c03451fad8cc6a818caca74fba4fe681a43700f6379b76ab4332fd80d2bb09",
+            "candidate_ids": [
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1"
+            ]
+          },
+          {
+            "block_index": 0,
+            "execution_order": 1,
+            "permutation_sha256": "d86f3086f193797a28c23c5e3e6af30f2273007532b61aa5341e1b1048e12554",
+            "candidate_ids": [
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1"
+            ]
+          },
+          {
+            "block_index": 1,
+            "execution_order": 2,
+            "permutation_sha256": "14b30d6997db983af1e910e917a7bc4bdfa4f0661987bd3ea751093484b63a5e",
+            "candidate_ids": [
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1"
+            ]
+          }
+        ]
+      },
+      {
+        "workload": [
+          256,
+          64,
+          384
+        ],
+        "workload_order": 1,
+        "panel_id": "B",
+        "chronological_panel_order": 3,
+        "stream_seed_sha256": "330a310668cb2b0addd0b00d80fcace368a092f1cf15693392b37406124a6829",
+        "blocks": [
+          {
+            "block_index": 0,
+            "execution_order": 0,
+            "permutation_sha256": "227215ca9968b107adaff740b45b53feba65d2e1f131ea8b19150e121274778e",
+            "candidate_ids": [
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1"
+            ]
+          },
+          {
+            "block_index": 1,
+            "execution_order": 1,
+            "permutation_sha256": "12ba82c84bf9a7874845c64565f8bb9b2b7c7414b1d4286e922911b76fbc82f3",
+            "candidate_ids": [
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1"
+            ]
+          },
+          {
+            "block_index": 2,
+            "execution_order": 2,
+            "permutation_sha256": "ca0a8033c312fee1b616fc98480cd210e23c95a7b6547d06796bb5fed5329119",
+            "candidate_ids": [
+              "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+              "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+              "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+              "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+              "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+              "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+              "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+              "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+              "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+              "tiled-bm32-bn8-bk16-wg8x32x1-shader1"
+            ]
+          }
+        ]
+      }
+    ],
+    "expected_candidate_records": 40,
+    "expected_blocks": 120,
+    "expected_timed_samples": 1200,
+    "expected_warmups": 360,
+    "expected_correctness_admissions": 120,
+    "expected_total_candidate_invocations": 1680
+  },
+  "phase": "complete",
+  "record_files": [
+    "panels/m256k64n384/A/tiled-bm16-bn16-bk16-wg16x16x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm16-bn16-bk32-wg16x16x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm16-bn16-bk8-wg16x16x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm16-bn8-bk8-wg8x16x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm32-bn8-bk16-wg8x32x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm32-bn8-bk8-wg8x32x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm8-bn16-bk8-wg16x8x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm8-bn32-bk16-wg32x8x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm8-bn32-bk8-wg32x8x1-shader1.json",
+    "panels/m256k64n384/A/tiled-bm8-bn8-bk8-wg8x8x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm16-bn16-bk16-wg16x16x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm16-bn16-bk32-wg16x16x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm16-bn16-bk8-wg16x16x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm16-bn8-bk8-wg8x16x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm32-bn8-bk16-wg8x32x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm32-bn8-bk8-wg8x32x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm8-bn16-bk8-wg16x8x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm8-bn32-bk16-wg32x8x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm8-bn32-bk8-wg32x8x1-shader1.json",
+    "panels/m256k64n384/B/tiled-bm8-bn8-bk8-wg8x8x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm16-bn16-bk16-wg16x16x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm16-bn16-bk32-wg16x16x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm16-bn16-bk8-wg16x16x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm16-bn8-bk8-wg8x16x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm32-bn8-bk16-wg8x32x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm32-bn8-bk8-wg8x32x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm8-bn16-bk8-wg16x8x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm8-bn32-bk16-wg32x8x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm8-bn32-bk8-wg32x8x1-shader1.json",
+    "panels/m7k19n11/A/tiled-bm8-bn8-bk8-wg8x8x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm16-bn16-bk16-wg16x16x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm16-bn16-bk32-wg16x16x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm16-bn16-bk8-wg16x16x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm16-bn8-bk8-wg8x16x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm32-bn8-bk16-wg8x32x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm32-bn8-bk8-wg8x32x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm8-bn16-bk8-wg16x8x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm8-bn32-bk16-wg32x8x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm8-bn32-bk8-wg32x8x1-shader1.json",
+    "panels/m7k19n11/B/tiled-bm8-bn8-bk8-wg8x8x1-shader1.json"
+  ],
+  "attempts": [
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722791
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722791,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722792
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722792,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        7,
+        19,
+        11
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722793
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722793,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722794
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722794,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "A",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 0,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722795
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722795,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 1,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk8-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk16-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn8-bk8-wg8x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk8-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm8-bn32-bk16-wg32x8x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk8-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn16-bk32-wg16x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm16-bn8-bk8-wg8x16x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    },
+    {
+      "panel_id": "B",
+      "workload": [
+        256,
+        64,
+        384
+      ],
+      "candidate_id": "tiled-bm32-bn8-bk16-wg8x32x1-shader1",
+      "block_index": 2,
+      "status": "completed_and_durably_recorded",
+      "started_utc": 1794722796,
+      "ended_utc": 1794722796
+    }
+  ],
+  "environment": [
+    {
+      "captured_utc": 1794722791,
+      "power_source": "Battery Power; battery reports discharging",
+      "battery_percent": "58%",
+      "thermal_state": "no recorded thermal or performance warning; thermal state otherwise unavailable",
+      "background_load": "host load averages 2.89 2.57 2.61; quantitative GPU load unavailable"
+    },
+    {
+      "captured_utc": 1794722796,
+      "power_source": "Battery Power; battery reports discharging",
+      "battery_percent": "58%",
+      "thermal_state": "no recorded thermal or performance warning; thermal state otherwise unavailable",
+      "background_load": "host load averages 2.89 2.57 2.61; quantitative GPU load unavailable"
+    }
+  ],
+  "source_preflight_captured_utc": 1794722790,
+  "generated_output_created_after_preflight": true,
+  "started_utc": 1794722791,
+  "ended_utc": 1794722796
+}

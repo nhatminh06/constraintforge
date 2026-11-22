@@ -1,0 +1,92 @@
+{
+  "schema": "constraintforge-m8-phase2a-candidate-panel-v1",
+  "synthetic": false,
+  "session_id": "m8-phase2a-session-002",
+  "session_index": 1,
+  "protocol_sha256": "d8e80f9a37359dadb86aa798ba5e798f22237e4a7cf0a3ee625eba239005939e",
+  "source_revision": "7b6a74f27d8acd87e7ed3dc10a94629d69b73c3c",
+  "source_tree_sha256": "89d0025d258c8932fd2ea3c8c9e8ee5a44f11d25a4794309e4b08c9a4a2c5e3e",
+  "panel_id": "B",
+  "chronological_panel_order": 2,
+  "workload": [
+    7,
+    19,
+    11
+  ],
+  "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+  "adapter": {
+    "name": "Apple M5",
+    "backend": "Metal",
+    "device_type": "IntegratedGpu",
+    "max_buffer_size": 4294967295,
+    "max_storage_buffer_binding_size": 4294967292,
+    "max_compute_workgroups_per_dimension": 65535,
+    "timestamp_query_supported": true,
+    "timestamp_period_ns": 1.0
+  },
+  "correctness_admission_blocks": [
+    0,
+    1,
+    2
+  ],
+  "blocks": [
+    {
+      "block_index": 0,
+      "order_index": 1,
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "started_utc": 1794679228,
+      "ended_utc": 1794679228,
+      "raw_samples_ns": [
+        20875.0,
+        999709.0,
+        22917.0,
+        26125.0,
+        26750.0,
+        26917.0,
+        24958.0,
+        20334.0,
+        20375.0,
+        24667.0
+      ]
+    },
+    {
+      "block_index": 1,
+      "order_index": 2,
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "started_utc": 1794679228,
+      "ended_utc": 1794679228,
+      "raw_samples_ns": [
+        21000.0,
+        32459.0,
+        32459.0,
+        21167.0,
+        20917.0,
+        21083.0,
+        21042.0,
+        21125.0,
+        20959.0,
+        21041.0
+      ]
+    },
+    {
+      "block_index": 2,
+      "order_index": 5,
+      "candidate_id": "tiled-bm8-bn16-bk8-wg16x8x1-shader1",
+      "started_utc": 1794679229,
+      "ended_utc": 1794679229,
+      "raw_samples_ns": [
+        26208.0,
+        22083.0,
+        294125.0,
+        25458.0,
+        25959.0,
+        25500.0,
+        26625.0,
+        26750.0,
+        26250.0,
+        22375.0
+      ]
+    }
+  ],
+  "status": "complete"
+}

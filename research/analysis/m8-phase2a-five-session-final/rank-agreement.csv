@@ -1,0 +1,12 @@
+schema,session_id,session_index,m,k,n,spearman,kendall_tau_b,top3_jaccard
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-001,0,7,19,11,0.6848484848484848,0.5111111111111111,0.5
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-001,0,256,64,384,1,1,1
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-002,1,7,19,11,0.8303030303030303,0.6888888888888889,0.5
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-002,1,256,64,384,1,1,1
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-003,2,7,19,11,0.7818181818181819,0.6,0.5
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-003,2,256,64,384,0.9878787878787879,0.9555555555555556,1
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-004,3,7,19,11,0.7696969696969697,0.5555555555555556,0.5
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-004,3,256,64,384,1,1,1
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-005,4,7,19,11,0.6606060606060606,0.5111111111111111,0.2
+constraintforge-m8-phase2a-rank-agreement-v1,m8-phase2a-session-005,4,256,64,384,1,1,1
+

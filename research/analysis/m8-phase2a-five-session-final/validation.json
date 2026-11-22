@@ -1,0 +1,9 @@
+{
+  "schema": "constraintforge-m8-phase2a-validation-v1",
+  "valid": true,
+  "sessions": 5,
+  "candidate_records": 200,
+  "blocks": 600,
+  "timed_samples": 6000,
+  "errors": []
+}

@@ -1,0 +1,171 @@
+{
+  "schema": "constraintforge-research-session-v1",
+  "session_id": "pilot-001",
+  "protocol_fingerprint": "fnv1a64:4a67e650afb236e7",
+  "started_utc": 1794261681,
+  "ended_utc": 1794261681,
+  "status": "complete",
+  "software": {
+    "rust_version": "rustc 1.87.0 (17067e9ac 2025-05-09)",
+    "cargo_version": "cargo 1.87.0 (99624be96 2025-05-06)",
+    "wgpu_version": "30.0.1",
+    "operating_system": "macos",
+    "architecture": "aarch64",
+    "build_profile": "release",
+    "source_revision": "unavailable/unversioned",
+    "git_worktree_clean": null,
+    "source_fingerprint_fnv1a64": "046ef70179a174b7",
+    "fingerprint_paths": [
+      "Cargo.lock",
+      "Cargo.toml",
+      "crates/constraintforge-bench/Cargo.toml",
+      "crates/constraintforge-bench/src/lib.rs",
+      "crates/constraintforge-cli/Cargo.toml",
+      "crates/constraintforge-cli/src/main.rs",
+      "crates/constraintforge-gpu/Cargo.toml",
+      "crates/constraintforge-gpu/src/lib.rs",
+      "crates/constraintforge-ir/Cargo.toml",
+      "crates/constraintforge-ir/src/lib.rs",
+      "crates/constraintforge-reference/Cargo.toml",
+      "crates/constraintforge-reference/src/lib.rs",
+      "crates/constraintforge-research/Cargo.toml",
+      "crates/constraintforge-research/src/lib.rs",
+      "crates/constraintforge-tuner/Cargo.toml",
+      "crates/constraintforge-tuner/src/lib.rs",
+      "rust-toolchain.toml"
+    ]
+  },
+  "execution_order": [
+    "s01-m2k2n2-b2-random-seed11",
+    "s01-m2k2n2-b2-resource-aware-seed11",
+    "s01-m2k2n2-b4-resource-aware-seed11",
+    "s01-m2k2n2-b4-random-seed11",
+    "s01-m15k17n13-b2-random-seed11",
+    "s01-m15k17n13-b2-resource-aware-seed11",
+    "s01-m15k17n13-b4-resource-aware-seed11",
+    "s01-m15k17n13-b4-random-seed11"
+  ],
+  "trials": [
+    {
+      "trial_id": "s01-m2k2n2-b2-random-seed11",
+      "workload": [
+        2,
+        2,
+        2
+      ],
+      "budget": 2,
+      "policy_id": "random",
+      "seed": 11,
+      "order_index": 0,
+      "status": "complete",
+      "result_file": "trials/s01-m2k2n2-b2-random-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m2k2n2-b2-resource-aware-seed11",
+      "workload": [
+        2,
+        2,
+        2
+      ],
+      "budget": 2,
+      "policy_id": "resource-aware",
+      "seed": 11,
+      "order_index": 1,
+      "status": "complete",
+      "result_file": "trials/s01-m2k2n2-b2-resource-aware-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m2k2n2-b4-resource-aware-seed11",
+      "workload": [
+        2,
+        2,
+        2
+      ],
+      "budget": 4,
+      "policy_id": "resource-aware",
+      "seed": 11,
+      "order_index": 0,
+      "status": "complete",
+      "result_file": "trials/s01-m2k2n2-b4-resource-aware-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m2k2n2-b4-random-seed11",
+      "workload": [
+        2,
+        2,
+        2
+      ],
+      "budget": 4,
+      "policy_id": "random",
+      "seed": 11,
+      "order_index": 1,
+      "status": "complete",
+      "result_file": "trials/s01-m2k2n2-b4-random-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m15k17n13-b2-random-seed11",
+      "workload": [
+        15,
+        17,
+        13
+      ],
+      "budget": 2,
+      "policy_id": "random",
+      "seed": 11,
+      "order_index": 0,
+      "status": "complete",
+      "result_file": "trials/s01-m15k17n13-b2-random-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m15k17n13-b2-resource-aware-seed11",
+      "workload": [
+        15,
+        17,
+        13
+      ],
+      "budget": 2,
+      "policy_id": "resource-aware",
+      "seed": 11,
+      "order_index": 1,
+      "status": "complete",
+      "result_file": "trials/s01-m15k17n13-b2-resource-aware-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m15k17n13-b4-resource-aware-seed11",
+      "workload": [
+        15,
+        17,
+        13
+      ],
+      "budget": 4,
+      "policy_id": "resource-aware",
+      "seed": 11,
+      "order_index": 0,
+      "status": "complete",
+      "result_file": "trials/s01-m15k17n13-b4-resource-aware-seed11.json",
+      "error": null
+    },
+    {
+      "trial_id": "s01-m15k17n13-b4-random-seed11",
+      "workload": [
+        15,
+        17,
+        13
+      ],
+      "budget": 4,
+      "policy_id": "random",
+      "seed": 11,
+      "order_index": 1,
+      "status": "complete",
+      "result_file": "trials/s01-m15k17n13-b4-random-seed11.json",
+      "error": null
+    }
+  ],
+  "interruptions": []
+}

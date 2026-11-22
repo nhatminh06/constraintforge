@@ -1,0 +1,31 @@
+[workspace]
+members = [
+    "crates/constraintforge-ir",
+    "crates/constraintforge-reference",
+    "crates/constraintforge-gpu",
+    "crates/constraintforge-bench",
+    "crates/constraintforge-tuner",
+    "crates/constraintforge-research",
+    "crates/constraintforge-cli",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.87"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+bytemuck = { version = "1.24.0", features = ["derive"] }
+clap = { version = "4.5.51", features = ["derive"] }
+pollster = "0.4.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+sha2 = "0.10.9"
+thiserror = "2.0.17"
+toml = "0.9.8"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+wgpu = "30.0.1"
+

@@ -1,0 +1,8 @@
+{
+  "schema": "constraintforge-m8-phase2a-analysis-v1",
+  "classification": "PROSPECTIVE / DESCRIPTIVE PILOT",
+  "sessions": 5,
+  "workload_pairs": 10,
+  "candidate_rows": 200,
+  "source_protocol_sha256": "d8e80f9a37359dadb86aa798ba5e798f22237e4a7cf0a3ee625eba239005939e"
+}

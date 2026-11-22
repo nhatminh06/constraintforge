@@ -1,0 +1,11 @@
+[package]
+name = "constraintforge-reference"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+constraintforge-ir = { path = "../constraintforge-ir" }
+thiserror.workspace = true
+

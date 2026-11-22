@@ -1,0 +1,24 @@
+[package]
+name = "constraintforge-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "constraintforge"
+path = "src/main.rs"
+
+[dependencies]
+clap.workspace = true
+constraintforge-bench = { path = "../constraintforge-bench" }
+constraintforge-gpu = { path = "../constraintforge-gpu" }
+constraintforge-ir = { path = "../constraintforge-ir" }
+constraintforge-reference = { path = "../constraintforge-reference" }
+constraintforge-tuner = { path = "../constraintforge-tuner" }
+constraintforge-research = { path = "../constraintforge-research" }
+thiserror.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+

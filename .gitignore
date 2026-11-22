@@ -1,0 +1,17 @@
+/target
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.tmp
+research/analysis/*-regenerated/
+/research/analysis/m6-resume-qualification/
+/research/analysis/m6-v2-*/
+/results/m6-metal/session-*/
+/results/m6-resume-qualification/
+/results/m6-resume-proof-*/
+/results/m6-v2-*/
+/results/m7-phase2a-*/
+

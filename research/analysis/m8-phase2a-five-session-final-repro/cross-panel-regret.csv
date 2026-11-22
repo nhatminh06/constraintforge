@@ -1,0 +1,12 @@
+schema,session_id,session_index,m,k,n,a_to_b_min,a_to_b_max,a_to_b_designated,b_to_a_min,b_to_a_max,b_to_a_designated
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-001,0,7,19,11,0,0,0,0,0,0
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-001,0,256,64,384,0,0,0,0,0,0
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-002,1,7,19,11,0,0,0,0,0,0
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-002,1,256,64,384,0,0,0,0,0,0
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-003,2,7,19,11,0.14469143548603952,0.14469143548603952,0.14469143548603952,0.005459468902865129,0.005459468902865129,0.005459468902865129
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-003,2,256,64,384,0,0,0,0,0,0
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-004,3,7,19,11,0.1366237643918659,0.1366237643918659,0.1366237643918659,0.13689385474860336,0.13689385474860336,0.13689385474860336
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-004,3,256,64,384,0,0,0,0,0,0
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-005,4,7,19,11,0.09779047884575172,0.09779047884575172,0.09779047884575172,0.13302742593728192,0.13302742593728192,0.13302742593728192
+constraintforge-m8-phase2a-cross-panel-regret-v1,m8-phase2a-session-005,4,256,64,384,0,0,0,0,0,0
+
