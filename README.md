@@ -4,6 +4,8 @@ ConstraintForge is a Rust-first GPU execution and scheduling research prototype.
 
 ## Architecture and scope
 
+![ConstraintForge architecture diagram](<docs/ConstraintForge Architecture Diagram.png>)
+
 The workspace separates IR (`constraintforge-ir`), CPU reference (`constraintforge-reference`), GPU execution and WGSL (`constraintforge-gpu`), prepared benchmarking (`constraintforge-bench`), bounded offline tuning (`constraintforge-tuner`), scientific validation and analysis (`constraintforge-research`), and the CLI. Supported graph operations are rank-2 MatMul, BiasAdd, and ReLU on static row-major F32 tensors. GPU execution keeps intermediate tensors on the device. The naive MatMul kernel remains an independent baseline; tiled candidates and deterministic production AUTO selection are separate from offline tuning.
 
 ## Build and CPU-only quick start
