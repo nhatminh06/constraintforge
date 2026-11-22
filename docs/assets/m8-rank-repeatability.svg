@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="445" viewBox="0 0 960 445" role="img" aria-label="Candidate ranking repeatability">
+<rect x="0" y="0" width="960" height="445" fill="white"/>
+<text x="42" y="43" fill="#172a46" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">Candidate ranking repeatability</text>
+<text x="42" y="69" fill="#52657b" font-family="Arial, sans-serif" font-size="14" font-weight="normal" text-anchor="start">Full ten-candidate rankings · paired panels within each physical session</text>
+<text x="58" y="104" fill="#172a46" font-family="Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start">7 × 19 × 11</text>
+<line x1="96" y1="355.0" x2="474" y2="355.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="87" y="360.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0</text>
+<line x1="96" y1="296.0" x2="474" y2="296.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="87" y="301.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0.25</text>
+<line x1="96" y1="237.0" x2="474" y2="237.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="87" y="242.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0.5</text>
+<line x1="96" y1="178.0" x2="474" y2="178.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="87" y="183.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0.75</text>
+<line x1="96" y1="119.0" x2="474" y2="119.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="87" y="124.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">1</text>
+<line x1="133" y1="355" x2="133" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="133" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">001</text>
+<line x1="208" y1="355" x2="208" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="208" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">002</text>
+<line x1="283" y1="355" x2="283" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="283" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">003</text>
+<line x1="358" y1="355" x2="358" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="358" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">004</text>
+<line x1="433" y1="355" x2="433" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="433" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">005</text>
+<text x="523" y="104" fill="#172a46" font-family="Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start">256 × 64 × 384</text>
+<line x1="561" y1="355.0" x2="939" y2="355.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="552" y="360.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0</text>
+<line x1="561" y1="296.0" x2="939" y2="296.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="552" y="301.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0.25</text>
+<line x1="561" y1="237.0" x2="939" y2="237.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="552" y="242.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0.5</text>
+<line x1="561" y1="178.0" x2="939" y2="178.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="552" y="183.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">0.75</text>
+<line x1="561" y1="119.0" x2="939" y2="119.0" stroke="#dce4ec" stroke-width="1"/>
+<text x="552" y="124.0" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end">1</text>
+<line x1="598" y1="355" x2="598" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="598" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">001</text>
+<line x1="673" y1="355" x2="673" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="673" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">002</text>
+<line x1="748" y1="355" x2="748" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="748" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">003</text>
+<line x1="823" y1="355" x2="823" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="823" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">004</text>
+<line x1="898" y1="355" x2="898" y2="360" stroke="#172a46" stroke-width="1"/>
+<text x="898" y="379" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle">005</text>
+<circle cx="128" cy="193.37575757575758" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="203" cy="159.04848484848483" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="278" cy="170.49090909090907" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="353" cy="173.35151515151517" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="428" cy="199.0969696969697" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="138" cy="234.3777777777778" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="213" cy="192.42222222222222" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="288" cy="213.4" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="363" cy="223.88888888888889" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="438" cy="234.3777777777778" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="593" cy="119.0" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="668" cy="119.0" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="743" cy="121.86060606060605" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="818" cy="119.0" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="893" cy="119.0" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<circle cx="603" cy="119.0" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="678" cy="119.0" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="753" cy="129.48888888888888" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="828" cy="119.0" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="903" cy="119.0" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<circle cx="325" cy="410" r="5" fill="#087e83" stroke="#087e83" stroke-width="2"/>
+<text x="340" y="415" fill="#172a46" font-family="Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start">Spearman ρ</text>
+<circle cx="485" cy="410" r="5" fill="#c7504e" stroke="#c7504e" stroke-width="2"/>
+<text x="500" y="415" fill="#172a46" font-family="Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start">Kendall τ-b</text>
+<text x="42" y="427" fill="#52657b" font-family="Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start">M8 Phase 2A · Apple M5 / Metal · five physical sessions · descriptive</text>
+</svg>

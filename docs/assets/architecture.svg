@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">ConstraintForge published architecture</title>
+  <desc id="desc">The CLI invokes typed graph IR, CPU reference, GPU execution, prepared benchmarking, bounded tuner, and research protocol analysis. Only the GPU path executes WGSL kernels; production AUTO is deterministic.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#8295aa"/></marker>
+    <style>text{font-family:Arial,sans-serif;fill:#172a46}.title{font-size:25px;font-weight:700}.sub{font-size:14px;fill:#52657b}.name{font-size:17px;font-weight:700}.detail{font-size:13px;fill:#52657b}.box{fill:#f4f8fb;stroke:#b7c8d6;stroke-width:1.5;rx:12}.accent{fill:#e5f4f3;stroke:#087e83;stroke-width:1.5;rx:12}.edge{fill:none;stroke:#8295aa;stroke-width:2;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="960" height="480" fill="white"/>
+  <text class="title" x="42" y="44">Execution and research boundaries</text>
+  <text class="sub" x="42" y="70">Published Rust workspace · typed F32 graphs · WGSL compute kernels</text>
+  <rect class="box" x="42" y="107" width="168" height="72"/><text class="name" x="58" y="136">CLI</text><text class="detail" x="58" y="158">commands and output</text>
+  <rect class="accent" x="254" y="107" width="186" height="72"/><text class="name" x="270" y="136">Graph IR</text><text class="detail" x="270" y="158">validated typed DAG</text>
+  <rect class="box" x="491" y="100" width="196" height="84"/><text class="name" x="507" y="130">CPU reference</text><text class="detail" x="507" y="152">deterministic oracle</text>
+  <rect class="accent" x="733" y="100" width="185" height="84"/><text class="name" x="749" y="130">GPU execution</text><text class="detail" x="749" y="152">wgpu · WGSL kernels</text><text class="detail" x="749" y="169">naive / tiled MatMul</text>
+  <path class="edge" d="M210 143H254"/><path class="edge" d="M440 143H491"/><path class="edge" d="M440 120V87H825V100"/>
+  <text class="sub" x="46" y="226">Measured path and offline search</text>
+  <rect class="box" x="254" y="246" width="186" height="78"/><text class="name" x="270" y="275">Prepared benchmark</text><text class="detail" x="270" y="297">samples and provenance</text>
+  <rect class="box" x="491" y="246" width="196" height="78"/><text class="name" x="507" y="275">Bounded tuner</text><text class="detail" x="507" y="297">offline candidate search</text>
+  <rect class="accent" x="733" y="246" width="185" height="78"/><text class="name" x="749" y="275">Research</text><text class="detail" x="749" y="297">protocols · validation</text>
+  <path class="edge" d="M825 184V226H347V246"/><path class="edge" d="M440 285H491"/><path class="edge" d="M687 285H733"/>
+  <rect x="42" y="358" width="876" height="80" rx="12" fill="#f5f8fb" stroke="#dce4ec"/>
+  <text class="name" x="60" y="387">Two separate decisions</text>
+  <text class="detail" x="60" y="411">Production AUTO selects a legal kernel deterministically. Offline tuning measures candidates within an explicit budget.</text>
+  <text class="sub" x="42" y="464">Boxes show responsibilities, not the complete crate dependency graph. See docs/architecture.md and crate manifests.</text>
+</svg>
